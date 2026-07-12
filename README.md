@@ -1,41 +1,77 @@
-# 📊 FORESIGHT – AI Powered Retail Analytics Dashboard
+# 📊 FORESIGHT – AI-Powered Retail Analytics Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
 
-An end-to-end AI-powered Retail Analytics platform developed using **Python, Machine Learning, and Streamlit** during the **Zidio Development Internship**.
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-success)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-The dashboard helps businesses analyze sales performance, identify customer behavior, forecast future demand, optimize inventory, and detect customer churn risk through interactive visualizations and machine learning models.
+An end-to-end **AI-Powered Retail Analytics Dashboard** developed using **Python, Streamlit, Plotly, Pandas, and Machine Learning** during the **Zidio Development Internship**.
+
+The platform enables businesses to analyze sales performance, forecast future demand, optimize inventory, identify customer segments, and detect customer churn through interactive visualizations and intelligent analytics.
+
+---
+
+# 🌐 Live Demo
+
+👉 **https://foresight-ai-dashboard.streamlit.app/**
+
+---
+
+# 📂 GitHub Repository
+
+👉 **https://github.com/harshada-codes/FORESIGHT**
+
+---
+
+# 📚 Table of Contents
+
+- Features
+- Technologies Used
+- Project Structure
+- Dashboard Overview
+- Machine Learning Modules
+- Installation
+- Dashboard Screenshots
+- Future Enhancements
+- Author
 
 ---
 
 # 🚀 Features
 
-### 📈 Sales Analytics
+## 📈 Sales Analytics
+
 - Monthly Revenue Trend
 - Top 10 Products by Revenue
-- Category-wise Revenue Analysis
-- Country-wise Revenue Analysis
+- Revenue by Category
+- Revenue by Country
 - Sales Channel Distribution
 - Daily Sales Trend
 - Quantity Analysis
 
-### 👥 Customer Analytics
+## 👥 Customer Analytics
+
 - Top Customers
 - RFM Customer Segmentation
 - Customer Churn Risk Analysis
 - Executive AI Summary
 
-### 🤖 AI & Machine Learning
-- Demand Forecasting using Random Forest Regressor
+## 🤖 AI & Machine Learning
+
+- Sales Demand Forecasting
 - Inventory Recommendation Engine
 - Customer Segmentation using RFM Analysis
 - Feature Engineering Pipeline
 
-### 📊 Interactive Dashboard
+## 📊 Interactive Dashboard
+
 - Dynamic Sidebar Filters
 - KPI Cards
 - Interactive Plotly Charts
-- Download Reports (CSV)
+- Downloadable Reports (CSV)
 - AI Business Insights
 
 ---
@@ -45,11 +81,12 @@ The dashboard helps businesses analyze sales performance, identify customer beha
 - Python
 - Pandas
 - NumPy
-- Matplotlib
 - Plotly
 - Streamlit
-- Scikit-learn
+- Scikit-Learn
 - Random Forest Regressor
+- Machine Learning
+- Data Visualization
 
 ---
 
@@ -92,6 +129,7 @@ FORESIGHT/
 │   └── data_loader.py
 │
 ├── requirements.txt
+├── runtime.txt
 ├── README.md
 └── .gitignore
 ```
@@ -110,8 +148,8 @@ The dashboard provides:
 - 📱 Sales Channel Distribution
 - 🤖 Executive AI Summary
 - 👥 Customer Segmentation
-- 🚨 Customer Churn Risk
-- 📈 30-Day Demand Forecast
+- 🚨 Customer Churn Risk Analysis
+- 📈 30-Day Sales Forecast
 - 📦 Inventory Recommendations
 - 📥 Downloadable Reports
 
@@ -119,30 +157,43 @@ The dashboard provides:
 
 # 🧠 Machine Learning Modules
 
-## Demand Forecasting
-- Model: Random Forest Regressor
-- Predicts future daily sales revenue.
+## 📈 Demand Forecasting
 
-## Customer Segmentation
-- RFM Analysis
-- Segments customers into:
-  - Champions
-  - Loyal Customers
-  - Potential Loyalists
-  - At Risk
-  - Lost Customers
+**Model Used:** Random Forest Regressor
 
-## Customer Churn Prediction
-Customers are classified into:
+Predicts future sales revenue using historical sales data and engineered features.
+
+---
+
+## 👥 Customer Segmentation
+
+Uses **RFM (Recency, Frequency, Monetary)** Analysis to classify customers into:
+
+- Champions
+- Loyal Customers
+- Potential Loyalists
+- At Risk
+- Lost Customers
+
+---
+
+## 🚨 Customer Churn Risk
+
+Identifies customers based on churn probability and classifies them into:
+
 - High Risk
 - Medium Risk
 - Low Risk
 
-## Inventory Recommendation
-Generates inventory recommendations:
-- Healthy Stock
-- Reorder Soon
-- Overstock
+---
+
+## 📦 Inventory Recommendation
+
+Provides intelligent inventory recommendations such as:
+
+- 🟢 Healthy Stock
+- 🟡 Reorder Soon
+- 🔴 Overstock
 
 ---
 
@@ -151,22 +202,22 @@ Generates inventory recommendations:
 Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/harshada-codes/FORESIGHT.git
 ```
 
-Move into the project
+Navigate into the project
 
 ```bash
 cd FORESIGHT
 ```
 
-Create virtual environment
+Create a virtual environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate virtual environment
+Activate the virtual environment
 
 ### Windows
 
@@ -180,7 +231,7 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Run the dashboard
+Run the application
 
 ```bash
 streamlit run app/app.py
@@ -202,7 +253,7 @@ streamlit run app/app.py
 
 ---
 
-## 🏆 Top 10 Products by Revenue
+## 🏆 Top Products by Revenue
 
 ![Top Products](screenshots/top_products.png)
 
@@ -210,66 +261,59 @@ streamlit run app/app.py
 
 ## 🌍 Revenue by Category & Country
 
-![Revenue by Category and Country](screenshots/category_country_revenue.png)
+![Revenue by Category](screenshots/category_country_revenue.png)
 
 ---
 
 ## 🛒 Sales Channel Distribution
 
-![Sales Channel Distribution](screenshots/sales_channel.png)
+![Sales Channel](screenshots/sales_channel.png)
 
 ---
 
 ## 🤖 Executive AI Summary
 
-![Executive AI Summary](screenshots/executive_ai_summary.png)
+![AI Summary](screenshots/executive_ai_summary.png)
 
 ---
 
 ## 📅 30-Day Sales Forecast
 
-![30-Day Sales Forecast](screenshots/sales_forecast.png)
+![Forecast](screenshots/sales_forecast.png)
 
 ---
 
 ## 📦 Inventory Recommendations
 
-![Inventory Recommendations](screenshots/inventory_recommendations.png)
+![Inventory](screenshots/inventory_recommendations.png)
 
 ---
 
 ## 📥 Download Reports
 
-![Download Reports](screenshots/download_reports.png)
+![Reports](screenshots/download_reports.png)
 
 ---
 
-# 📈 Future Enhancements
+# 👩‍💻 Author
 
-- Authentication & Login
-- Real-time Database Integration
-- Cloud Deployment
-- Sales Prediction API
-- Customer Lifetime Value Prediction
-- Automated Email Reports
-- Power BI Integration
+## Harshada Patil
 
----
+### Skills
 
-# 👩‍💻 Developer
-
-**Harshada Patil**
-
-BE Computer Engineering
-
-Jawahar Education Society's Institute of Technology, Management & Research, Nashik
-
-Developed as part of the **Zidio Development Internship**.
+- Python
+- Machine Learning
+- Data Analytics
+- Streamlit
+- Plotly
+- Pandas
+- Scikit-Learn
+- Business Intelligence
 
 ---
 
 # 📄 License
 
-This project is developed for educational and internship purposes.
+This project was developed for educational purposes as part of the **Zidio Development Internship**.
 
 © 2026 Harshada Patil

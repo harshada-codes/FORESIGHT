@@ -35,8 +35,8 @@ The platform enables businesses to analyze sales performance, forecast future de
 - Machine Learning Modules
 - Installation
 - Dashboard Screenshots
-- Future Enhancements
 - Author
+- License
 
 ---
 
